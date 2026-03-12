@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | CAD Drafting India</title>
+    <meta name="description" content="Insights, trends, and expert advice on architectural drafting, CAD services, and BIM integration in the AEC industry.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Georgia', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#003366',
+                            lightBlue: '#004c99',
+                            orange: '#F97316',
+                            dark: '#1F2937',
+                            gray: '#F3F4F6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #003366; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #F97316; }
+        
+        html { scroll-behavior: smooth; }
+
+        .blog-card-shadow {
+            box-shadow: 0 10px 30px -15px rgba(0, 51, 102, 0.1);
+        }
+        .blog-card-shadow:hover {
+            box-shadow: 0 20px 40px -20px rgba(0, 51, 102, 0.2);
+            transform: translateY(-4px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
+
+    <!-- Navigation Bar -->
+    <header class="fixed w-full top-0 z-50 bg-white shadow-md transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center cursor-pointer hover:opacity-90 transition-opacity">
+                    <div class="text-brand-blue font-bold text-2xl tracking-tight flex items-center gap-2">
+                        <i class="fa-solid fa-compass-drafting text-brand-orange text-3xl"></i>
+                        <span>CAD Drafting <span class="text-brand-orange">India</span></span>
+                    </div>
+                </a>
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-brand-orange font-medium transition-colors">Home</a>
+                    <a href="blog.html" class="text-brand-orange font-bold transition-colors">Blog</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Header Section -->
+    <section class="pt-32 pb-16 bg-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h4 class="text-brand-orange font-bold tracking-widest uppercase text-sm mb-3">Insights & Expertise</h4>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-brand-blue leading-tight mb-4">
+                Our Blog
+            </h1>
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                Stay updated with the latest trends in architectural drafting, structural detailing, and BIM technology.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Listing Section -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="max-w-md mx-auto md:mx-0">
+            <!-- Card 1: The Only Card -->
+            <div class="flex flex-col bg-white rounded-lg overflow-hidden blog-card-shadow group cursor-pointer border border-gray-100 h-full">
+                <!-- Split Image Container -->
+                <div class="relative h-64 flex w-full overflow-hidden">
+                    <!-- Real Building Image -->
+                    <div class="w-1/2 h-full">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Modern Building Exterior" class="w-full h-full object-cover">
+                    </div>
+                    <!-- BIM/Model Image -->
+                    <div class="w-1/2 h-full border-l border-white/20">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="BIM Model Blueprint" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Overlay Grid effect for the right side -->
+                    <div class="absolute right-0 top-0 w-1/2 h-full bg-brand-blue/5 pointer-events-none"></div>
+                </div>
+
+                <!-- Card Content -->
+                <div class="p-8 flex flex-col flex-grow">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="bg-blue-50 text-brand-lightBlue text-[11px] font-bold px-3 py-1 rounded uppercase tracking-wider">
+                            CAD & BIM
+                        </span>
+                        <span class="text-gray-400 text-xs font-medium">5 Min Read</span>
+                    </div>
+                    
+                    <h2 class="text-2xl font-extrabold text-brand-dark leading-tight group-hover:text-brand-blue transition-colors mb-6">
+    <a href="">
+        Why Architectural Drafting Is the Foundation of Successful Modern Construction
+    </a>
+</h2>
+                    
+                    <div class="mt-auto">
+                        <a href="#" class="text-brand-lightBlue font-bold text-sm tracking-widest uppercase flex items-center group/link">
+                            Read Article 
+                            <i class="fa-solid fa-arrow-right ml-2 group-hover/link:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#212E40] pt-10 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="text-white font-bold text-2xl tracking-tight flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-compass-drafting text-[#D48968] text-2xl"></i>
+                        <span>CAD Drafting <span class="text-[#D48968]">India</span></span>
+                    </div>
+                    <p class="text-[#9ca3af] text-[15px] font-sans leading-relaxed mb-6 max-w-md">
+                        Leading provider of accurate, code-compliant structural drafting and detailing services. Empowering construction projects worldwide with engineering precision.
+                    </p>
+                    <div class="flex space-x-5">
+                        <span class="text-[#9ca3af] cursor-pointer hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-[22px]"></i></span>
+                        <span class="text-[#9ca3af] cursor-pointer hover:text-white transition-colors"><i class="fa-brands fa-twitter text-[22px]"></i></span>
+                        <span class="text-[#9ca3af] cursor-pointer hover:text-white transition-colors"><i class="fa-brands fa-facebook text-[22px]"></i></span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-5 uppercase tracking-wider text-[14px]">SERVICES</h4>
+                    <ul class="space-y-3 text-[15px] text-[#9ca3af]">
+                        <li>2D Drafting</li>
+                        <li>Steel Detailing</li>
+                        <li>Rebar Detailing</li>
+                        <li>3D Modeling</li>
+                        <li>CAD Conversion</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700/50 pt-8 text-center text-[15px] text-[#9ca3af]">
+                <p>CAD Drafting India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Navbar Scroll Effect -->
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
